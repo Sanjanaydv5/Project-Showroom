@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "npm --prefix project run dev",
+    "build": "npm --prefix project run build",
+    "lint": "npm --prefix project run lint",
+    "preview": "npm --prefix project run preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "react-router-dom": "^7.18.4",
+    "tailwindcss": "^4.3.3"
+  }
+}
