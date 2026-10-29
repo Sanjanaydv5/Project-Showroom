@@ -1,5 +1,6 @@
-"use client";
 import React, {usestate} from 'react';
+
+import { Link } from "react-router-dom";
 
 export default function Counter() {
     const [count, setCount] = useState(0);

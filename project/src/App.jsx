@@ -109,6 +109,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/game/counter" element={<Counter />} />
+      <Route path="/game/ludo" element={<Ludo />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );
