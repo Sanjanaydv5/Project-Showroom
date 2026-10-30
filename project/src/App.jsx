@@ -2,6 +2,7 @@ import './App.css'
 import { Link, Route, Routes } from "react-router-dom";
 import Ludo from "./game/ludo.jsx";
 import Counter from "./game/counter.jsx";
+import Calculator from "./game/calculator.jsx";
 
 const projects = [
   {
@@ -110,6 +111,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/game/counter" element={<Counter />} />
       <Route path="/game/ludo" element={<Ludo />} />
+      <Route path="/game/calculator" element={<Calculator />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   );
