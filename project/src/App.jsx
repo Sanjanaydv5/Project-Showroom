@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Counter APP",
     description: "check this counter app.",
-    icon: "🎲",
+    icon: "⏱️",
     path: "/game/counter",
   },
   {
