@@ -3,9 +3,17 @@ import { Link, Route, Routes } from "react-router-dom";
 import Ludo from "./game/ludo.jsx";
 import Counter from "./game/counter.jsx";
 import Calculator from "./game/calculator.jsx";
+import Timer from "./game/timer.jsx";
+
 
 const projects = [
   {
+  name: "Timer App",
+  description: "Set a timer and manage your time.",
+  icon: "⏳",
+  path: "/game/timer",
+},
+{
     name: "Ludo Game",
     description: "Play the classic Ludo board game.",
     icon: "🎲",
