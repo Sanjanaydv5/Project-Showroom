@@ -121,6 +121,7 @@ function App() {
       <Route path="/game/ludo" element={<Ludo />} />
       <Route path="/game/calculator" element={<Calculator />} />
       <Route path="*" element={<HomePage />} />
+      <Route path="/game/timer" element={<Timer />} />
     </Routes>
   );
 }
