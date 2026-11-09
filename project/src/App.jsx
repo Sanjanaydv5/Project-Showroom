@@ -1,19 +1,28 @@
+
 import './App.css'
 import { Link, Route, Routes } from "react-router-dom";
+
 import Ludo from "./game/ludo.jsx";
 import Counter from "./game/counter.jsx";
 import Calculator from "./game/calculator.jsx";
 import Timer from "./game/timer.jsx";
+import TodoList from "./game/todolist.jsx";
 
 
 const projects = [
   {
-  name: "Timer App",
-  description: "Set a timer and manage your time.",
-  icon: "⏳",
-  path: "/game/timer",
-},
-{
+    name: "Timer App",
+    description: "Set a timer and manage your time.",
+    icon: "⏳",
+    path: "/game/timer",
+  },
+  {
+    name: "Todo List",
+    description: "Organize your tasks and stay productive.",
+    icon: "📝",
+    path: "/game/todolist",
+  },
+  {
     name: "Ludo Game",
     description: "Play the classic Ludo board game.",
     icon: "🎲",
@@ -21,7 +30,7 @@ const projects = [
   },
   {
     name: "Counter APP",
-    description: "check this counter app.",
+    description: "Check this counter app.",
     icon: "⏱️",
     path: "/game/counter",
   },
@@ -120,10 +129,12 @@ function App() {
       <Route path="/game/counter" element={<Counter />} />
       <Route path="/game/ludo" element={<Ludo />} />
       <Route path="/game/calculator" element={<Calculator />} />
-      <Route path="*" element={<HomePage />} />
       <Route path="/game/timer" element={<Timer />} />
+      <Route path="/game/todolist" element={<TodoList />} />
+
+      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 }
 
-export default App
+export default App;
